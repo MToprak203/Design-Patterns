@@ -11,7 +11,7 @@
 - [Repository Pattern](#repository-pattern)
 - [Strategy Pattern](#strategy-pattern)
 - [Composite Pattern](#composite-pattern)
-- [MVC Pattern](#mvc-pattern)
+- [Model-View-Controller (MVC) Pattern](#model-view-controller-mvc-pattern)
 - [Adapter Pattern](#adapter-pattern)
 - [Builder Pattern](#builder-pattern)
 - [Unit of Work Pattern](#unit-of-work-pattern)
@@ -382,7 +382,7 @@ Suppose we want to model an organizational hierarchy where we have employees and
 
 For a detailed example demonstrating the Composite Pattern in action, please refer to the provided example in the code repository. The example illustrates how the Composite Pattern can be used to model and manage organizational hierarchies effectively.
 
-# MVC Pattern 
+# Model-View-Controller (MVC) Pattern 
 
 In software engineering, the Model-View-Controller (MVC) pattern is a widely used architectural pattern for designing user interfaces. It separates an application into three main components: Model, View, and Controller. This separation helps to organize code, improve maintainability, and facilitate collaboration among developers.
 
