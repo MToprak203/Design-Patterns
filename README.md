@@ -17,6 +17,7 @@
 - [Unit of Work Pattern](#unit-of-work-pattern)
 - [Layered Architecture Pattern](#layered-architecture-pattern)
 - [Service-Oriented Architecture (SOA) Pattern](#service-oriented-architecture-soa-pattern)
+- [Event-Driven Architecture (EDA) Pattern](#event-driven-architecture-eda-pattern)
 
 # Singleton Pattern
 
@@ -623,3 +624,31 @@ Each service operates independently but collaborates to provide a seamless shopp
 ## Conclusion
 
 Service-Oriented Architecture (SOA) is a powerful design pattern for building complex and scalable applications. By decomposing applications into smaller, loosely coupled services, SOA enables flexibility, modularity, and interoperability, making it ideal for modern software development.
+
+# Event-Driven Architecture (EDA) Pattern
+
+Event-Driven Architecture (EDA) is a design pattern where components of a system communicate with each other by generating and reacting to events. In this architecture, components are loosely coupled, making the system more scalable, flexible, and easier to maintain.
+
+## How it Works
+
+1. **Event Generation**: Components within the system generate events when certain actions or conditions occur. These events can represent a wide range of occurrences, such as user interactions, system state changes, or external triggers.
+
+2. **Event Publication**: Once an event is generated, it needs to be published or broadcasted to other components interested in that event. This can be done through a messaging system, event bus, or other means of communication.
+
+3. **Event Handling**: Components interested in certain types of events subscribe to them. When an event is published, the subscribed components receive it and can take appropriate actions based on the event data and their internal logic.
+
+4. **Loose Coupling**: EDA promotes loose coupling between components by allowing them to interact indirectly through events. This means that components don't need to know about each other's internals, leading to better separation of concerns and easier maintenance.
+
+## Benefits
+
+- **Scalability**: EDA allows for the easy addition or removal of components without tightly coupling them to the existing system, making it easier to scale the system as needed.
+  
+- **Flexibility**: Components can react to events dynamically, allowing for more flexibility in system behavior and easier adaptation to changing requirements.
+
+- **Maintainability**: With loose coupling between components, it's easier to maintain and update individual parts of the system without affecting others.
+
+- **Resilience**: EDA can improve system resilience by allowing components to handle failures gracefully and recover from errors more effectively.
+
+## Conclusion
+
+Event-Driven Architecture offers a powerful way to design systems that are scalable, flexible, and maintainable. By enabling components to communicate through events, EDA promotes loose coupling and helps build resilient and adaptable systems.

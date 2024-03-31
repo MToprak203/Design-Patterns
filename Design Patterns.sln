@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWork", "UnitOfWork\UnitOfWork.csproj", "{113DBFB7-594D-45D5-998E-C0B5868ECB38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredArchitecture", "LayeredArchitecture\LayeredArchitecture.csproj", "{E71C48AF-88FA-461C-A3A8-42756B2CD959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LayeredArchitecture", "LayeredArchitecture\LayeredArchitecture.csproj", "{E71C48AF-88FA-461C-A3A8-42756B2CD959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOA", "SOA\SOA.csproj", "{AD8D8545-2204-42BC-8862-469FB40133E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOA", "SOA\SOA.csproj", "{AD8D8545-2204-42BC-8862-469FB40133E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDA", "EDA\EDA.csproj", "{41D24511-A996-4B74-9AB3-E0D08E9017E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{AD8D8545-2204-42BC-8862-469FB40133E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD8D8545-2204-42BC-8862-469FB40133E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD8D8545-2204-42BC-8862-469FB40133E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D24511-A996-4B74-9AB3-E0D08E9017E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D24511-A996-4B74-9AB3-E0D08E9017E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D24511-A996-4B74-9AB3-E0D08E9017E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D24511-A996-4B74-9AB3-E0D08E9017E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
