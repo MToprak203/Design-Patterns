@@ -18,6 +18,7 @@
 - [Layered Architecture Pattern](#layered-architecture-pattern)
 - [Service-Oriented Architecture (SOA) Pattern](#service-oriented-architecture-soa-pattern)
 - [Event-Driven Architecture (EDA) Pattern](#event-driven-architecture-eda-pattern)
+- [Microservices Architecture Pattern](#microservices-architecture-pattern)
 
 # Singleton Pattern
 
