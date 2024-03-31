@@ -19,6 +19,7 @@
 - [Service-Oriented Architecture (SOA) Pattern](#service-oriented-architecture-soa-pattern)
 - [Event-Driven Architecture (EDA) Pattern](#event-driven-architecture-eda-pattern)
 - [Microservices Architecture Pattern](#microservices-architecture-pattern)
+- [Command Pattern](#command-pattern)
 
 # Singleton Pattern
 
@@ -703,3 +704,30 @@ Since each microservice runs independently, failures in one service do not neces
 ## Conclusion
 
 Microservices architecture offers many benefits, including flexibility, scalability, and resilience. However, it also presents challenges in terms of complexity and coordination. By understanding the key characteristics and trade-offs of microservices, teams can design and implement scalable and resilient systems that meet the needs of modern applications.
+
+# Command Pattern
+
+The Command Pattern is a behavioral design pattern that encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. It allows you to decouple sender and receiver of a request based on the idea of having a separate object to represent each action or request.
+
+## Structure
+
+- **Command:** Defines an interface for executing an operation.
+- **ConcreteCommand:** Implements the Command interface and defines the binding between the action and the receiver. It stores the state necessary for executing the action.
+- **Invoker:** Asks the command to carry out the request.
+- **Receiver:** Knows how to perform the operation associated with the command.
+
+## Advantages
+
+- **Decouples sender and receiver:** Command pattern decouples the sender and receiver of a command, thus promoting loose coupling.
+- **Flexibility:** Commands can be added, removed, or modified easily, without affecting other parts of the system.
+- **Undo/Redo:** The pattern supports undoable operations by maintaining a history of commands executed.
+
+## When to Use
+
+- When you want to parameterize objects with operations.
+- When you need to queue or log requests.
+- When you want to implement undo/redo functionality.
+
+## Example
+
+Consider a scenario of a remote control that can control different electronic devices like lights, fans, and doors. Each device can be turned on, turned off, or adjusted in some way. By using the command pattern, we can encapsulate these actions into separate command objects, allowing us to parameterize the remote control with different actions and support undo functionality easily.
