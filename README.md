@@ -20,7 +20,7 @@
 - [Event-Driven Architecture (EDA) Pattern](#event-driven-architecture-eda-pattern)
 - [Microservices Architecture Pattern](#microservices-architecture-pattern)
 - [Command Pattern](#command-pattern)
-- [MapReduce Design Pattern](#mapreduce-design-pattern)
+- [MapReduce Pattern](#mapreduce-pattern)
 
 # Singleton Pattern
 
@@ -733,7 +733,7 @@ The Command Pattern is a behavioral design pattern that encapsulates a request a
 
 Consider a scenario of a remote control that can control different electronic devices like lights, fans, and doors. Each device can be turned on, turned off, or adjusted in some way. By using the command pattern, we can encapsulate these actions into separate command objects, allowing us to parameterize the remote control with different actions and support undo functionality easily.
 
-# MapReduce Design Pattern
+# MapReduce Pattern
 
 ## Overview
 
