@@ -20,6 +20,7 @@
 - [Event-Driven Architecture (EDA) Pattern](#event-driven-architecture-eda-pattern)
 - [Microservices Architecture Pattern](#microservices-architecture-pattern)
 - [Command Pattern](#command-pattern)
+- [MapReduce Design Pattern](#mapreduce-design-pattern)
 
 # Singleton Pattern
 
@@ -731,3 +732,43 @@ The Command Pattern is a behavioral design pattern that encapsulates a request a
 ## Example
 
 Consider a scenario of a remote control that can control different electronic devices like lights, fans, and doors. Each device can be turned on, turned off, or adjusted in some way. By using the command pattern, we can encapsulate these actions into separate command objects, allowing us to parameterize the remote control with different actions and support undo functionality easily.
+
+# MapReduce Design Pattern
+
+## Overview
+
+MapReduce is a programming model and an associated implementation for processing and generating large datasets that are parallelizable, fault-tolerant, and suitable for distributed computing. It was popularized by Google as a way to efficiently process large amounts of data across clusters of commodity hardware.
+
+The MapReduce design pattern consists of two main phases: the Map phase and the Reduce phase.
+
+### Map Phase
+
+In the Map phase, the input data is divided into smaller chunks, and a map function is applied to each chunk independently. The map function processes the input data and produces a set of intermediate key-value pairs.
+
+### Reduce Phase
+
+In the Reduce phase, the intermediate key-value pairs produced by the Map phase are grouped by key, and a reduce function is applied to each group. The reduce function processes the values associated with each key and produces the final output.
+
+## Key Components
+
+- **Map Function**: The map function takes an input dataset and processes it to generate intermediate key-value pairs.
+
+- **Reduce Function**: The reduce function takes the intermediate key-value pairs produced by the Map phase, groups them by key, and processes each group to produce the final output.
+
+- **Shuffle and Sort**: After the Map phase, the intermediate key-value pairs are shuffled and sorted based on the keys to prepare them for the Reduce phase.
+
+- **Partitioning**: In a distributed environment, the intermediate key-value pairs are partitioned across multiple nodes to enable parallel processing.
+
+## Applications
+
+MapReduce is widely used for large-scale data processing tasks such as:
+
+- **Log Analysis**: MapReduce can efficiently analyze large volumes of log data to extract valuable insights, identify trends, and detect anomalies.
+
+- **Web Indexing**: Search engines use MapReduce to crawl and index web pages from across the internet, enabling fast and accurate search results.
+
+- **Data Mining**: MapReduce enables the exploration and extraction of useful patterns and information from large datasets, facilitating tasks such as market analysis, customer segmentation, and recommendation systems.
+
+- **Machine Learning**: MapReduce frameworks provide scalable infrastructure for training and deploying machine learning models on massive datasets, enabling applications such as natural language processing, image recognition, and predictive analytics.
+
+- **Distributed Sorting**: MapReduce algorithms are well-suited for sorting large datasets distributed across multiple nodes in a cluster, making it possible to efficiently perform tasks such as sorting records in databases or log files.
